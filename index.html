@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GigaHub - Ultimate Script Executor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0e0e0e;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Cyber glowing grid background effect */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent, #0e0e0e 80%);
+            background-size: 80px 80px;
+            background-image: repeating-linear-gradient(45deg, #1a1a1a 0, #1a1a1a 2px, transparent 2px, transparent 100%);
+            z-index: -1;
+            animation: cyberBackground 10s linear infinite;
+        }
+
+        @keyframes cyberBackground {
+            from { transform: translateX(0) translateY(0); }
+            to { transform: translateX(100px) translateY(100px); }
+        }
+
+        header {
+            padding: 20px;
+            background-color: #151515;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header img {
+            width: 150px;
+            animation: pulseLogo 3s infinite;
+        }
+
+        @keyframes pulseLogo {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff004c;
+            border-right: 2px solid #ff004c;
+            overflow: hidden;
+        }
+
+        /* Typing effect for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                white-space: nowrap;
+                width: 0;
+                animation: typing 4s steps(30, end) forwards;
+            }
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .download-buttons a {
+            text-decoration: none;
+            background-color: #1f1f1f;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 120px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-buttons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.4s;
+        }
+
+        .download-buttons a:hover::before {
+            left: 100%;
+        }
+
+        .download-buttons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c;
+        }
+
+        .download-buttons img {
+            width: 40px;
+            margin-bottom: 10px;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                border-right: none;
+                animation: none; /* Disable typing animation for mobile */
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .download-buttons a {
+                width: 100px;
+                padding: 15px;
+            }
+
+            .download-buttons {
+                gap: 10px;
+            }
+        }
+
+        /* New bottom text section */
+        .bottom-text {
+            padding: 20px;
+            background-color: #151515;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .bottom-text h2 {
+            color: #ff004c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .bottom-text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bottom-text ul li {
+            margin-bottom: 15px;
+        }
+
+        .bottom-text ul li span {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/giga.png" alt="GigaHub Logo">
+    </header>
+    <div class="container">
+    <h1>Execute Your Scripts Seamlessly.</h1>
+    <p>GigaHub unleashes unmatched script execution for Roblox, empowering your gameplay with roblox  <strong>Assets</strong> and <strong>Scripts</strong>.</p>
+    <p>Gigahub stands out from other TSBG scripts by offering superior performance, enhanced customization options, and seamless integration capabilities. Its streamlined interface and optimized coding make it faster and more reliable, providing users with a smoother experience and reducing downtime. If you're looking for efficiency and scalability, Gigahub is the clear choice.</p>
+    <div class="download-buttons">
+        <a href="https://discord.gg/HmWEdTd5">
+            <img src="images/Asset%20logo.png" alt="Assets">
+            Assets
+        </a>
+        <a href="https://gigachad-website.vercel.app/">
+            <img src="images/scirpt%20logo.png" alt="Scripts">
+            Scripts
+        </a>
+    </div>
+</div>
+    <!-- New Bottom Text Section -->
+    <div class="bottom-text">
+        <h2>Gigahub | Site</h2>
+        <ul>
+            <li><span>1.</span> Time-saving and Ready-to-Use Assets: GigaHub provides pre-built scripts and assets that are highly functional and customizable. By leveraging these, you significantly reduce development time as you won't need to build things from scratch. This is perfect for web developers who want to focus on the core features of their site while relying on efficient and ready-made components.</li>
+            <li><span>2.</span> Optimized Performance: GigaHub scripts are designed with performance in mind. Whether you're building a static site or a dynamic platform, you can expect smoother loading times and optimized code, resulting in better user experiences and improved SEO rankings.</li>
+            <li><span>3.</span> Wide Range of Features: From UI components to backend utilities, GigaHub offers a wide variety of assets that cater to different aspects of web development. Whether you need animations, forms, or database integration tools, GigaHub has a solution.</li>
+            <li><span>4.</span> Easy Integration: GigaHub scripts and assets are easy to integrate with popular web development frameworks and libraries, making them highly versatile. Whether you’re using React, Angular, or vanilla JavaScript, they fit seamlessly into your stack.</li>
+            <li><span>5.</span> Continuous Updates: GigaHub ensures that its scripts and assets stay up-to-date with the latest web technologies and security patches, reducing your maintenance effort and keeping your website safe and efficient.</li>
+        </ul>
+
+        <h2>Why should you use it</h2>
+        <ul>
+            <li><span>1.</span> Advanced Exploiting Tools: GigaHub scripts tailored for Roblox exploiting offer powerful capabilities that enhance game performance, automate actions, and provide exploits that are hard to find elsewhere. This gives users an edge by unlocking hidden features or gaining an unfair advantage in games.</li>
+            <li><span>2.</span> Customization and Flexibility: Many of GigaHub's scripts are customizable, allowing users to tweak settings and functions to suit their specific needs in Roblox. Whether it's automation or specific game exploits, users can personalize the experience.</li>
+            <li><span>3.</span> Easy-to-Use Interface: GigaHub’s assets are designed to be user-friendly, even for those who are new to Roblox exploiting. With simple installation guides and an intuitive interface, you don't need to be a coding expert to get the most out of these scripts.</li>
+            <li><span>4.</span> Frequent Updates and Bypass: Roblox often updates its security features to prevent exploiting, but GigaHub continuously releases updated scripts that bypass new patches and anti-cheat mechanisms, ensuring you stay ahead of Roblox's defense system.</li>
+            <li><span>5.</span> Active Community and Support: The GigaHub community offers support and guidance to users. If you run into issues or need help with customization, there’s always someone to assist, making it easier to get started and continue exploiting without interruptions.</li>
+        </ul>
+
+        <h2>Conclusion:</h2>
+        <p>GigaHub scripts and assets offer powerful, optimized, and up-to-date tools for both website development and Roblox exploiting. Whether you want to streamline your web project or enhance your Roblox experience, using GigaHub resources can provide you with significant advantages, ensuring efficiency, performance, and continuous improvement.</p></div>
+
+
+</body></html>
